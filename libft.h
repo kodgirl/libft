@@ -16,6 +16,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <fcntl.h>
+# define BUFF_SIZE 1
 
 typedef struct		s_list
 {
@@ -91,5 +93,6 @@ size_t				ft_strlento(char *s, char c);
 char				*ft_massmalloc(char **dst, size_t len, int index);
 char				*ft_strccpy(char *dst, const char *src, char c);
 char				*ft_strdup(const char *src);
+char				*ft_static(char *str, char **line);
 
 #endif
